@@ -23,10 +23,13 @@ body {
 }
 
 .rect1 {
-	top: 181px; left: 370px; 
-	rotate: 180deg;
-	width: calc(100% - 370px);
-	max-width: 1280px;
+	/* Các thuộc tính cũ đã bị loại bỏ hoặc thay thế */
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
 }
 
 .header1 .header-graphic-left2 {
@@ -114,8 +117,10 @@ body {
 }
 
 .row2 {
-	z-index: 13;
+	z-index: 2;
 	padding-right: 413px;
+	display: flex;
+	align-items: flex-start;
 }
 
 .text-co-cau-to-chuc {
@@ -131,6 +136,16 @@ body {
 	width: 90%;
 	max-width: 1380px;
 	align-self: center;
+}
+
+.breadcrumb-container {
+	position: relative;
+	display: flex;
+	margin-top: 10px;
+	height: 45px; /* Chiều cao của dải breadcrumb */
+	width: 90%;
+	max-width: 1380px;
+	margin: 15px auto 0px auto; /* Căn giữa container */
 }
 
 .row3 {
@@ -378,4 +393,15 @@ body {
 		width: 100%;
 		max-width: 445px;
 	}
+}
+
+/* Thêm container để giới hạn chiều rộng cho header và footer */
+.container {
+	width: 90%;
+	max-width: 1380px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	height: 100%; /* Đảm bảo container chiếm hết chiều cao của cha */
 }
