@@ -266,7 +266,7 @@ body {
 	align-items: flex-start;
 	gap: 1rem;
 	background-color: #95cc44;
-	padding: 2.125rem 11.3125rem 1.625rem 16.875rem; /* 34px 181px 26px 270px */
+	padding: 2.125rem 0 1.625rem 0; /* 34px 0 26px 0 */
 }
 
 .footer-logo1 {
@@ -1229,7 +1229,7 @@ body {
 	font-size: 1.25rem; /* 20px */
 	font-weight: 400;
 	background-color: #13ae5b;
-	padding: 0.75rem 17.3125rem 0.5625rem 17.3125rem; /* 12px 277px 9px 277px */
+	padding: 0.75rem 0 0.5625rem 0; /* 12px 0 9px 0 */
 }
 /* end header-a*/
 
@@ -2773,9 +2773,6 @@ body {
 /** breakpoints (margin / paddings) **/
 
 @media screen and (max-width: 1280px) {
-	.footer-a {
-		padding-inline: var(--margin-md);
-	}
 	.footer-text-right1 {
 		margin-inline: 0;
 	}
@@ -2839,14 +2836,13 @@ body {
 
 /* container queries (flex rows) */
 
-@container body (width < 1784px) {
+@container body (max-width: 1784px) {
 	.footer-a {
 		flex-direction: column;
-		align-items: center;
 		gap: 0.9375rem; /* 15px */
 	}
 	.footer-a > * {
-		margin-left: unset !important; margin-top: unset !important;
+		margin-top: unset !important;
 		text-align: center;
 	}
 	.footer-a > .footer-text-cong-ty-co-phan1 {
@@ -2857,7 +2853,7 @@ body {
 	}
 }
 
-@container body (width < 1104px) {
+@container body (max-width: 1104px) {
 	.header-a {
 		flex-direction: column;
 		align-items: center;
@@ -2869,7 +2865,7 @@ body {
 	}
 }
 
-@container card-a (width < 433px) {
+@container card-a (max-width: 433px) {
 	.card-row1 {
 		flex-direction: column;
 		align-items: center;
@@ -2886,7 +2882,7 @@ body {
 	}
 }
 
-@container body (width < 1104px) {
+@container body (max-width: 1104px) {
 	.header-b {
 		flex-direction: column;
 		align-items: center;
@@ -2904,7 +2900,7 @@ body {
 	}
 }
 
-@container body (width < 1286px) {
+@container body (max-width: 1286px) {
 	.row-b {
 		flex-direction: column;
 		align-items: center;
@@ -2919,7 +2915,7 @@ body {
 	}
 }
 
-@container body (width < 1784px) {
+@container body (max-width: 1784px) {
 	.footer-b {
 		flex-direction: column;
 		align-items: center;
@@ -2937,7 +2933,7 @@ body {
 	}
 }
 
-@container col6 (width < 513px) {
+@container col6 (max-width: 513px) {
 	.row-g {
 		margin-left: 0;
 		flex-direction: column;
@@ -2953,7 +2949,7 @@ body {
 	}
 }
 
-@container body (width < 486px) {
+@container body (max-width: 486px) {
 	.row-j {
 		flex-direction: column;
 		align-items: center;
@@ -2964,7 +2960,7 @@ body {
 	}
 }
 
-@container body (width < 485px) {
+@container body (max-width: 485px) {
 	.row-k {
 		flex-direction: column;
 		align-items: center;
