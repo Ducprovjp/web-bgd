@@ -28,6 +28,7 @@ body {
 	max-width: 1370px;
 	display: flex;
 	align-items: flex-start;
+	flex-wrap: nowrap;
 	font-size: 15px;
 	font-weight: 500;
 }
@@ -173,8 +174,9 @@ body {
 }
 
 .btn-xem-them1 {
-	position: absolute; top: 412px; left: 598px; 
+	position: absolute; top: 412px; left: 50%; 
 	width: 180px;
+	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
 	text-align: center;

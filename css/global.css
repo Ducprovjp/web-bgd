@@ -1,20 +1,20 @@
 
 :root {
 	/* responsive margins / paddings */
-	--margin-sm: 16px;
-	--margin-md: 32px;
+	--margin-sm: 1rem;
+	--margin-md: 2rem;
 }
 
 * {
 	--min-screen-size: 430;
 	--max-screen-size: 1920;
 	--interpolate-diff: calc(var(--max-font-size) - var(--min-font-size));
-	--interpolate: clamp(calc(var(--min-font-size) * 1px), calc((var(--min-font-size) * 1px) + var(--interpolate-diff) * ((100vw - calc(var(--min-screen-size) * 1px)) / (var(--max-screen-size) - var(--min-screen-size)))), calc(var(--max-font-size) * 1px));
+	--interpolate: clamp(calc(var(--min-font-size) * 0.0625rem), calc((var(--min-font-size) * 0.0625rem) + var(--interpolate-diff) * ((100vw - calc(var(--min-screen-size) * 0.0625rem)) / (var(--max-screen-size) - var(--min-screen-size)))), calc(var(--max-font-size) * 0.0625rem));
 }
 
 html {
 	height: 100%;
-	font-size: 16px;
+	font-size: 100%;
 }
 
 body {
@@ -25,9 +25,10 @@ body {
 	flex-direction: column;
 	font-family: 'Inter';
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	background-color: #fff;
 	overflow: auto;
+	overflow-x: hidden;
 }
 
 
@@ -40,21 +41,21 @@ body {
 	font-family: 'Inter';
 	font-weight: 400;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text6 {
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text-black2 {
 	color: #000;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-style: italic;
 	font-weight: 300;
 }
@@ -66,12 +67,12 @@ body {
 }
 
 .text5 {
-	font-size: 10px;
+	font-size: 0.625rem;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text2 {
@@ -79,12 +80,12 @@ body {
 	font-family: 'Inter';
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text-white {
 	color: #fff;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 
@@ -94,7 +95,7 @@ body {
 	font-family: 'Inter';
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text-dark2 {
@@ -103,7 +104,7 @@ body {
 	font-family: 'Inter';
 	font-weight: 400;
 	line-height: 1.3;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .subtitle3 {
@@ -112,62 +113,62 @@ body {
 	font-family: 'Inter';
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .subtitle4 {
 	color: #14ae5c;
-	font-size: 30px;
+	font-size: 1.875rem;
 	font-family: 'Inter';
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text3 {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 500;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text-black1 {
 	color: #000;
-	font-size: 10px;
+	font-size: 0.625rem;
 	font-family: 'Inter';
 	font-style: italic;
 	font-weight: 300;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text4 {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-family: 'Inter';
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text7 {
-	font-size: 11.91px;
+	font-size: 0.7444rem;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text1 {
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-style: normal;
 	font-weight: 500;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 }
 
 .text-dark1 {
 	color: #303030;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 400;
 	line-height: 1.6;
 }
@@ -189,7 +190,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	background-color: #e7f1d4;
-	padding: 0 15px;
+	padding: 0 0.9375rem; /* 15px */
 }
 
 
@@ -200,48 +201,48 @@ body {
 	width: 100%;
 	display: flex;
 	background-color: #fff;
-	padding: 0 8px;
-	border: 1px solid #009950;
+	padding: 0 0.5rem; /* 8px */
+	border: 0.0625rem solid #009950; /* 1px */
 }
 
 .btn2 {
 	display: flex;
 	align-items: flex-start;
 	background-color: #13ae5b;
-	padding-left: 20px;
-	padding-right: 15px;
-	border: 0.7px solid rgba(48, 48, 48, 0.5);
+	padding-left: 1.25rem; /* 20px */
+	padding-right: 0.9375rem; /* 15px */
+	border: 0.04375rem solid rgba(48, 48, 48, 0.5);
 }
 
 .card-gray1 {
-	width: calc(100% - 32px);
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: #d4e6ae;
-	padding: 18px 18px 15px 17px;
-	border: 1px solid #a1a69e;
+	padding: 1.125rem 1.125rem 0.9375rem 1.0625rem; /* 18px 18px 15px 17px */
+	border: 0.0625rem solid #a1a69e; /* 1px */
 }
 
 .card1 {
 	display: flex;
 	flex-direction: column;
 	background-color: #95cc44;
-	padding: 23px 22px 24px 22px;
+	padding: 1.4375rem 1.375rem 1.5rem 1.375rem; /* 23px 22px 24px 22px */
 }
 
 .card-gray2 {
 	display: flex;
 	flex-direction: column;
 	background-color: #d4e6ae;
-	padding: 21px 21px 18px 20px;
-	border: 1px solid #a1a69e;
+	padding: 1.3125rem 1.3125rem 1.125rem 1.25rem; /* 21px 21px 18px 20px */
+	border: 0.0625rem solid #a1a69e; /* 1px */
 }
 
 .card-white {
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
-	padding: 26px 22px 28px 19px;
+	padding: 1.625rem 1.375rem 1.75rem 1.1875rem; /* 26px 22px 28px 19px */
 }
 
 
@@ -263,19 +264,19 @@ body {
 .footer-a {
 	display: flex;
 	align-items: flex-start;
-	gap: 16px;
+	gap: 1rem;
 	background-color: #95cc44;
-	padding: 34px 181px 26px 270px;
+	padding: 2.125rem 11.3125rem 1.625rem 16.875rem; /* 34px 181px 26px 270px */
 }
 
 .footer-logo1 {
-	margin-top: 15px;
-	width: 50px; height: 66px;
+	margin-top: 0.9375rem; /* 15px */
+	width: 3.125rem; height: 4.125rem; /* 50px 66px */
 	flex-shrink: 0;
 }
 
 .footer-text-cong-ty-co-phan1 {
-	margin-top: 19px;
+	margin-top: 1.1875rem; /* 19px */
 	flex-grow: 1;
 	text-align: left;
 }
@@ -309,13 +310,13 @@ body {
 
 .group-b {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 32px); height: 428px;
-	max-width: 436px;
+	width: 100%;
+	max-width: 27.25rem;
 }
 
 .group-graphic {
 	position: absolute; top: 0; left: 0; right: 0; 
-	height: 428px;
+	height: auto;
 }
 /* end group-b*/
 
@@ -326,722 +327,841 @@ body {
 
 .group-c {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px); height: 428px;
-	max-width: 436px;
+	width: 100%;
+	max-width: 27.25rem;
 }
 
 .group-clip-path2 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path3 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path4 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path5 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path6 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path7 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path8 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path9 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path10 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path11 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path12 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path13 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path14 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path15 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path16 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path17 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path18 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path19 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path20 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path21 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path22 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path23 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path24 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path25 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path26 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path27 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path28 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path29 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path30 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path31 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path32 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path33 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path34 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path35 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path36 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path37 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path38 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path39 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path40 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path41 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path42 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path43 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path44 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path45 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path46 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path47 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path48 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path49 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path50 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path51 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path52 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path53 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path54 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path55 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path56 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path57 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path58 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path59 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path60 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path61 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path62 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path63 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path64 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path65 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path66 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path67 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path68 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path69 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path70 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path71 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path72 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path73 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path74 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path75 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path76 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path77 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path78 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path79 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path80 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path81 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path82 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path83 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path84 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path85 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path86 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path87 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path88 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path89 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path90 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path91 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path92 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path93 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path94 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path95 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path96 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path97 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path98 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path99 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path100 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path101 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path102 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path103 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path104 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path105 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path106 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path107 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path108 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path109 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path110 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path111 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path112 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path113 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path114 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path115 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path116 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path117 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path118 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path119 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 
 .group-clip-path120 {
-	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
-	max-width: 436px;
+  position: relative;
+  top: 0; left: 0;
+  width: 100%;
+  max-width: 27.25rem;
 }
 /* end group-c*/
 
@@ -1051,18 +1171,18 @@ body {
 /* btn-a */
 
 .btn-a {
-	margin-top: 22px;
+	margin-top: 1.375rem; /* 22px */
 	display: flex;
 	justify-content: center;
-	gap: 4px;
+	gap: 0.25rem; /* 4px */
 	color: #fff;
 	font-style: normal;
 	font-weight: 700;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: unset;
 	background-color: #13ae5b;
-	padding: 10px 13px 10px 0;
-	border: 0.5px solid rgba(48, 48, 48, 0.5);
+	padding: 0.625rem 0.8125rem 0.625rem 0; /* 10px 13px 10px 0 */
+	border: 0.03125rem solid rgba(48, 48, 48, 0.5); /* 0.5px */
 }
 /* end btn-a*/
 
@@ -1072,8 +1192,8 @@ body {
 }
 
 .icon-a {
-	margin-top: 6px;
-	width: 10px; height: 6px;
+	margin-top: 0.375rem; /* 6px */
+	width: 0.625rem; height: 0.375rem; /* 10px 6px */
 	flex-shrink: 0;
 }
 
@@ -1082,17 +1202,17 @@ body {
 /* btn-light-a */
 
 .btn-light-a {
-	margin-top: 22px;
+	margin-top: 1.375rem; /* 22px */
 	display: flex;
 	justify-content: center;
-	gap: 6px;
+	gap: 0.375rem; /* 6px */
 	color: #303030;
 	font-style: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: unset;
 	background-color: #f5f5f5;
-	padding: 10px 0;
-	border: 0.5px solid rgba(48, 48, 48, 0.5);
+	padding: 0.625rem 0; /* 10px */
+	border: 0.03125rem solid rgba(48, 48, 48, 0.5); /* 0.5px */
 }
 /* end btn-light-a*/
 
@@ -1104,12 +1224,12 @@ body {
 .header-a {
 	display: flex;
 	align-items: flex-start;
-	gap: 9px;
+	gap: 0.5625rem; /* 9px */
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px */
 	font-weight: 400;
 	background-color: #13ae5b;
-	padding: 12px 277px 9px 277px;
+	padding: 0.75rem 17.3125rem 0.5625rem 17.3125rem; /* 12px 277px 9px 277px */
 }
 /* end header-a*/
 
@@ -1124,34 +1244,34 @@ body {
 
 .rect-a {
 	position: absolute;
-	height: 20px;
+	height: 1.25rem; /* 20px */
 	background-color: #009950;
 }
 
 .graphic-b {
-	margin-top: 1px;
-	height: 48px;
+	margin-top: 0.0625rem; /* 1px */
+	height: 3rem; /* 48px */
 	flex-shrink: 0;
 }
 
 .title {
-	margin-top: -16px; margin-bottom: -15px;
+	margin-top: -1rem; margin-bottom: -0.9375rem; /* -16px -15px */
 	text-align: left;
 }
 
 .btn-xem-them-a {
-	width: 180px;
+	width: 11.25rem; /* 180px */
 	display: flex;
 	justify-content: center;
 	color: #fff;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	font-style: normal;
 	font-weight: 500;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: center;
 	background-color: #02542d;
-	padding: 0 8px;
-	border-radius: 25px;
+	padding: 0 0.5rem; /* 8px */
+	border-radius: 1.5625rem; /* 25px */
 }
 
 
@@ -1160,19 +1280,19 @@ body {
 
 .circle-white-a {
 	position: relative;
-	width: 48px; height: 48px;
+	width: 3rem; height: 3rem; /* 48px */
 	flex-shrink: 0;
 	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 50%;
 }
 
 .circle-white-graphic {
-	position: absolute; top: 18px; left: 50%; 
+	position: absolute; top: 1.125rem; left: 50%; /* 18px */
 	translate: -50% 0;
 	rotate: -90deg;
 	transform-origin: 50% 50%;
-	margin-left: 2px;
-	width: 22px; height: 13px;
+	margin-left: 0.125rem; /* 2px */
+	width: 1.375rem; height: 0.8125rem; /* 22px 13px */
 }
 /* end circle-white-a*/
 
@@ -1187,927 +1307,927 @@ body {
 
 .group-clip-path121 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path122 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path123 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path124 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path125 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path126 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path127 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path128 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path129 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path130 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path131 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path132 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path133 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path134 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path135 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path136 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path137 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path138 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path139 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path140 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path141 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path142 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path143 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path144 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path145 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path146 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path147 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path148 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path149 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path150 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path151 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path152 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path153 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path154 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path155 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path156 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path157 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path158 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path159 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path160 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path161 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path162 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path163 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path164 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path165 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path166 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path167 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path168 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path169 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path170 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path171 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path172 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path173 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path174 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path175 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path176 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path177 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path178 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path179 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path180 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path181 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path182 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path183 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path184 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path185 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path186 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path187 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path188 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path189 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path190 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path191 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path192 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path193 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path194 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path195 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path196 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path197 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path198 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path199 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path200 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path201 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path202 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path203 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path204 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path205 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path206 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path207 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path208 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path209 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path210 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path211 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path212 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path213 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path214 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path215 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path216 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path217 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path218 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path219 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path220 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path221 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path222 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path223 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path224 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path225 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path226 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path227 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path228 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path229 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path230 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path231 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path232 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path233 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path234 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path235 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path236 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path237 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path238 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path239 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path240 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path241 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path242 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path243 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path244 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path245 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path246 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path247 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path248 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path249 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path250 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path251 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path252 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path253 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path254 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path255 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path256 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path257 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path258 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path259 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path260 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path261 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path262 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path263 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path264 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path265 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path266 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path267 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path268 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path269 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path270 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path271 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path272 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path273 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path274 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path275 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path276 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path277 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path278 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path279 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path280 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path281 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path282 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path283 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path284 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path285 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path286 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path287 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path288 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path289 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path290 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path291 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path292 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path293 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path294 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path295 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path296 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path297 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path298 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path299 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path300 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path301 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path302 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path303 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path304 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 
 .group-clip-path305 {
 	position: absolute; top: 0; left: 0; 
-	width: calc(100% - 0px);
+	width: 100%;
 }
 /* end group-d*/
 
@@ -2118,16 +2238,16 @@ body {
 
 .circle-white-b {
 	position: absolute;
-	width: 150px; height: 150px;
+	width: 9.375rem; height: 9.375rem; /* 150px */
 	background-color: #fff;
-	border: 2px solid #95cc44;
+	border: 0.125rem solid #95cc44; /* 2px */
 	border-radius: 50%;
 }
 
 .circle-white-group1 {
-	position: absolute; top: 35px; left: 50%; 
+	position: absolute; top: 2.1875rem; left: 50%; /* 35px */
 	translate: -50% 0;
-	width: 91px; height: 76px;
+	width: 5.6875rem; height: 4.75rem; /* 91px 76px */
 }
 /* end circle-white-b*/
 
@@ -2138,16 +2258,16 @@ body {
 
 .circle-white-c {
 	position: absolute;
-	width: 150px; height: 150px;
+	width: 9.375rem; height: 9.375rem; /* 150px */
 	background-color: #fff;
-	border: 2px solid #95cc44;
+	border: 0.125rem solid #95cc44; /* 2px */
 	border-radius: 50%;
 }
 
 .circle-white-group2 {
-	position: absolute; top: 41px; left: 50%; 
+	position: absolute; top: 2.5625rem; left: 50%; /* 41px */
 	translate: -50% 0;
-	width: 103px; height: 60px;
+	width: 6.4375rem; height: 3.75rem; /* 103px 60px */
 }
 /* end circle-white-c*/
 
@@ -2158,42 +2278,42 @@ body {
 
 .circle-white-d {
 	position: absolute;
-	width: 150px; height: 150px;
+	width: 9.375rem; height: 9.375rem; /* 150px */
 	background-color: #fff;
-	border: 2px solid #95cc44;
+	border: 0.125rem solid #95cc44; /* 2px */
 	border-radius: 50%;
 }
 
 .circle-white-group3 {
-	position: absolute; top: 40px; left: 50%; 
+	position: absolute; top: 2.5rem; left: 50%; /* 40px */
 	translate: -50% 0;
-	margin-left: -2px;
-	width: 89px; height: 72px;
+	margin-left: -0.125rem; /* -2px */
+	width: 5.5625rem; height: 4.5rem; /* 89px 72px */
 }
 /* end circle-white-d*/
 
 
 .rect-b {
 	position: absolute;
-	border: 2px dashed #95cc44;
-	border-radius: 20px;
+	border: 0.125rem dashed #95cc44; /* 2px */
+	border-radius: 1.25rem; /* 20px */
 }
 
 .btn-kham-pha-cac {
-	margin-left: -17px;
+	margin-left: -1.0625rem; /* -17px */
 	width: 100%;
-	max-width: 353px;
+	max-width: 22.0625rem; /* 353px */
 	display: flex;
 	justify-content: center;
 	align-self: center;
 	color: #fff;
 	font-style: normal;
 	font-weight: 700;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: center;
 	background-color: #f29928;
-	padding: 16px 11px 15px 11px;
-	border-radius: 27.5px;
+	padding: 1rem 0.6875rem 0.9375rem 0.6875rem; /* 16px 11px 15px 11px */
+	border-radius: 1.71875rem; /* 27.5px */
 }
 
 
@@ -2201,32 +2321,32 @@ body {
 /* column-b */
 
 .column-b {
-	position: absolute; z-index: 1; top: 4px; 
-	width: calc(100% - 3px);
-	max-width: 309px;
+	position: absolute; z-index: 1; top: 0.25rem; /* 4px */
+	width: calc(100% - 0.1875rem); /* 3px */
+	max-width: 19.3125rem; /* 309px */
 	display: flex;
 	flex-direction: column;
-	gap: 144px;
-	padding-bottom: 132px;
+	gap: 9rem; /* 144px */
+	padding-bottom: 8.25rem; /* 132px */
 }
 
 .column-row-top {
 	display: flex;
 	align-items: flex-start;
-	gap: 14px;
+	gap: 0.875rem; /* 14px */
 }
 
 .column-row {
 	display: flex;
 	align-items: flex-start;
-	gap: 15px;
+	gap: 0.9375rem; /* 15px */
 	flex-grow: 1;
 }
 
 .column-col-bottom {
 	rotate: 90deg;
 	transform-origin: 50% 50%;
-	margin-left: -132px;
+	margin-left: -8.25rem; /* -132px */
 	display: flex;
 	flex-direction: column;
 	align-self: start;
@@ -2253,17 +2373,17 @@ body {
 	position: relative; z-index: 2;
 	display: flex;
 	align-items: flex-start;
-	gap: 16px;
+	gap: 1rem; /* 16px */
 	align-self: start;
 }
 
 .row-group {
-	width: 20px; height: 20px;
+	width: 1.25rem; height: 1.25rem; /* 20px */
 	flex-shrink: 0;
 }
 
 .row-text1 {
-	margin: -1px -1px -3px 0;
+	margin: -0.0625rem -0.0625rem -0.1875rem 0; /* -1px -1px -3px 0 */
 	text-align: left;
 }
 /* end row-a*/
@@ -2276,22 +2396,22 @@ body {
 .card-a {
 	container: card-a / inline-size;
 	position: absolute;
-	max-width: 489px;
+	max-width: 30.5625rem; /* 489px */
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 1rem; /* 16px */
 	color: #b8b8b8;
-	font-size: 15px;
+	font-size: 0.9375rem; /* 15px */
 	font-weight: 400;
 	background-color: #00aa4f;
-	padding: 90px 27px 37px 28px;
-	border-radius: 20px;
+	padding: 5.625rem 1.6875rem 2.3125rem 1.75rem; /* 90px 27px 37px 28px */
+	border-radius: 1.25rem; /* 20px */
 }
 
 .card-row1 {
 	display: flex;
 	align-items: flex-start;
-	gap: 16px;
+	gap: 1rem; /* 16px */
 }
 
 .card-row2 {
@@ -2299,8 +2419,8 @@ body {
 	align-items: flex-start;
 	justify-content: space-between;
 	background-color: #fff;
-	padding: 12px 19px 11px 23px;
-	border-radius: 5px;
+	padding: 0.75rem 1.1875rem 0.6875rem 1.4375rem; /* 12px 19px 11px 23px */
+	border-radius: 0.3125rem; /* 5px */
 }
 
 .card-text1 {
@@ -2308,56 +2428,56 @@ body {
 }
 
 .card-graphic1 {
-	margin-top: 6px;
-	width: 10px; height: 6px;
+	margin-top: 0.375rem; /* 6px */
+	width: 0.625rem; height: 0.375rem; /* 10px 6px */
 	flex-shrink: 0;
 }
 
 .card-input-ghi-chu-neu {
-	min-height: 107px;
+	min-height: 6.6875rem; /* 107px */
 	flex-shrink: 0;
 	font-style: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: left;
-	padding: 23px;
-	border-radius: 5px;
+	padding: 1.4375rem; /* 23px */
+	border-radius: 0.3125rem; /* 5px */
 }
 
 .card-btn-dang-ky-ngay {
-	margin-left: -1px; margin-top: 114px;
-	width: 243px;
+	margin-left: -0.0625rem; margin-top: 7.125rem; /* -1px 114px */
+	width: 15.1875rem; /* 243px */
 	display: flex;
 	justify-content: center;
 	align-self: center;
 	color: #fff;
 	text-align: center;
 	background-color: #02542d;
-	padding: 13px 10px 11px 10px;
-	border-radius: 12px;
+	padding: 0.8125rem 0.625rem 0.6875rem 0.625rem; /* 13px 10px 11px 10px */
+	border-radius: 0.75rem; /* 12px */
 }
 /* end card-a*/
 
 
 .card-btn {
 	width: 100%;
-	min-height: 41px;
+	min-height: 2.5625rem; /* 41px */
 	display: flex;
 	flex-grow: 1;
 	font-style: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: left;
 	background-color: #fff;
-	padding-top: 12px;
-	padding-bottom: 11px;
-	border-radius: 5px;
+	padding-top: 0.75rem; /* 12px */
+	padding-bottom: 0.6875rem; /* 11px */
+	border-radius: 0.3125rem; /* 5px */
 }
 
 .card-input {
 	font-style: normal;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: left;
-	padding: 12px 23px 11px 23px;
-	border-radius: 5px;
+	padding: 0.75rem 1.4375rem 0.6875rem 1.4375rem; /* 12px 23px 11px 23px */
+	border-radius: 0.3125rem; /* 5px */
 }
 
 .graphic-c {
@@ -2365,10 +2485,10 @@ body {
 }
 
 .text-cong-ty-co-phan {
-	margin-left: 16px; margin-top: 4px;
+	margin-left: 1rem; margin-top: 0.25rem; /* 16px 4px */
 	flex-grow: 1;
 	color: #14ae5c;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	font-weight: 700;
 	text-align: left;
 }
@@ -2378,7 +2498,7 @@ body {
 }
 
 .home {
-	width: 28px; height: 23px;
+	width: 1.75rem; height: 1.4375rem; /* 28px 23px */
 	flex-shrink: 0;
 }
 
@@ -2428,12 +2548,12 @@ body {
 	position: relative;
 	display: flex;
 	align-items: flex-start;
-	gap: 17px;
+	gap: 1.0625rem; /* 17px */
 	color: #fff;
 	--min-font-size: 16; --max-font-size: 20; font-size: var(--interpolate);
 	font-weight: 700;
 	background-color: #95cc44;
-	padding: 11px 0 7px 21px;
+	padding: 0.6875rem 0 0.4375rem 1.3125rem; /* 11px 0 7px 21px */
 }
 /* end row-c*/
 
@@ -2445,19 +2565,19 @@ body {
 .footer-b {
 	display: flex;
 	align-items: flex-start;
-	gap: 16px;
+	gap: 1rem; /* 16px */
 	background-color: #95cc44;
-	padding: 34px 181px 26px 270px;
+	padding: 2.125rem 11.3125rem 1.625rem 16.875rem; /* 34px 181px 26px 270px */
 }
 
 .footer-logo2 {
-	margin-top: 15px;
-	width: 50px; height: 66px;
+	margin-top: 0.9375rem; /* 15px */
+	width: 3.125rem; height: 4.125rem; /* 50px 66px */
 	flex-shrink: 0;
 }
 
 .footer-text-cong-ty-co-phan2 {
-	margin-top: 19px;
+	margin-top: 1.1875rem; /* 19px */
 	flex-grow: 1;
 	text-align: left;
 }
@@ -2478,17 +2598,17 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 16px;
+	gap: 1rem; /* 16px */
 	color: #fff;
 	--min-font-size: 19; --max-font-size: 20; font-size: var(--interpolate);
 	font-weight: 400;
 	background-color: #13ae5b;
-	padding: 19px 49px;
+	padding: 1.1875rem 3.0625rem; /* 19px 49px */
 }
 
 .header-graphic3 {
-	position: absolute; top: 30px; left: 471px; 
-	width: 45px; height: 31px;
+	position: absolute; top: 1.875rem; left: 29.4375rem; /* 30px 471px */
+	width: 2.8125rem; height: 1.9375rem; /* 45px 31px */
 }
 /* end header-c*/
 
@@ -2581,36 +2701,36 @@ body {
 /* row-j */
 
 .row-j {
-	margin-left: 3px; margin-top: 30px;
+	margin-left: 0.1875rem; margin-top: 1.875rem; /* 3px 30px */
 	display: flex;
 	align-items: flex-start;
 	align-self: center;
 	color: #303030;
-	font-size: 20px;
+	font-size: 1.25rem; /* 20px */
 	font-weight: 500;
 }
 
 .btn-left {
-	min-height: 53px;
+	min-height: 3.3125rem; /* 53px */
 	justify-content: center;
-	gap: 17px;
+	gap: 1.0625rem; /* 17px */
 	color: #f5f5f5;
 	font-style: normal;
 	font-weight: 700;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	text-align: unset;
 }
 /* end row-j*/
 
 
 .label-d {
-	margin-top: 13px;
+	margin-top: 0.8125rem; /* 13px */
 	text-align: left;
 }
 
 .icon-d {
-	margin-top: 22px;
-	height: 8px;
+	margin-top: 1.375rem; /* 22px */
+	height: 0.5rem; /* 8px */
 	flex-shrink: 0;
 }
 
@@ -2723,7 +2843,7 @@ body {
 	.footer-a {
 		flex-direction: column;
 		align-items: center;
-		gap: 15px;
+		gap: 0.9375rem; /* 15px */
 	}
 	.footer-a > * {
 		margin-left: unset !important; margin-top: unset !important;
@@ -2741,7 +2861,7 @@ body {
 	.header-a {
 		flex-direction: column;
 		align-items: center;
-		gap: 13px;
+		gap: 0.8125rem; /* 13px */
 	}
 	.header-a > * {
 		margin-left: unset !important; margin-top: unset !important;
@@ -2753,7 +2873,7 @@ body {
 	.card-row1 {
 		flex-direction: column;
 		align-items: center;
-		gap: 14px;
+		gap: 0.875rem; /* 14px */
 	}
 	.card-row1 > * {
 		text-align: center;
@@ -2770,7 +2890,7 @@ body {
 	.header-b {
 		flex-direction: column;
 		align-items: center;
-		gap: 13px;
+		gap: 0.8125rem; /* 13px */
 	}
 	.row1 {
 		margin-left: 0; margin-right: 0;
@@ -2788,7 +2908,7 @@ body {
 	.row-b {
 		flex-direction: column;
 		align-items: center;
-		gap: 14px;
+		gap: 0.875rem; /* 14px */
 	}
 	.row-b > * {
 		margin-left: unset !important; margin-right: unset !important; margin-top: unset !important;
@@ -2803,7 +2923,7 @@ body {
 	.footer-b {
 		flex-direction: column;
 		align-items: center;
-		gap: 15px;
+		gap: 0.9375rem; /* 15px */
 	}
 	.footer-b > * {
 		margin-left: unset !important; margin-top: unset !important;
@@ -2822,7 +2942,7 @@ body {
 		margin-left: 0;
 		flex-direction: column;
 		align-items: center;
-		gap: 15px;
+		gap: 0.9375rem; /* 15px */
 	}
 	.row-g > * {
 		margin-right: unset !important; margin-top: unset !important;

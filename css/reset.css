@@ -31,7 +31,7 @@ body {
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
-  border-top-width: 1px; /* 3 */
+  border-top-width: 0.0625rem; /* 3 */
 }
 
 abbr:where([title]) {
@@ -142,7 +142,7 @@ progress {
 
 [type='search'] {
   -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  outline-offset: -0.125rem; /* 2 */
 }
 
 ::-webkit-search-decoration {
