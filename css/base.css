@@ -1,0 +1,104 @@
+/* ===== 1) Font + màu ===== */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --primary: #13ae5b;
+  --secondary: #95cc44;
+  --text: #303030;
+    --solution-height: 0px;
+}
+
+/* ===== 2) Tỉ lệ rem theo màn hình =====
+   1920px: 1rem = 10px
+   1536px: 1rem = 8px  (0.8)
+   1440px: 1rem = 7.5px (0.75)
+   1366px: 1rem = 7.114583px (≈0.7114583)
+*/
+html {
+  font-size: 10px;
+} /* >= 1920px */
+
+@media (max-width: 1536px) {
+  html {
+    font-size: 8px;
+  } /* 1536 */
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 7.5px;
+  } /* 1440 */
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 7.114583px;
+  } /* 1366 */
+}
+
+/* ===== 3) Reset / base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* ===== 4) Layout theo rem (đã quy đổi từ px) =====
+   Lưu ý: 1366px -> 136.6rem ; 1200px -> 120rem ; 20px -> 2rem ; 30px -> 3rem ; 15px -> 1.5rem
+*/
+.wrapper {
+  max-width: 136.6rem; /* 1366px */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 120rem; /* 1200px */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.separation__component {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.separation-component__green {
+  height: 2rem; /* 20px */
+  background: var(--secondary);
+  width: 67%;
+}
+
+.separation-component__dark-blue {
+  height: 3rem; /* 30px */
+  background: #009950;
+  width: 100%;
+  position: relative;
+}
+
+.btn {
+  border-radius: 1.5rem; /* 15px */
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
