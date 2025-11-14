@@ -283,7 +283,7 @@ html {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background: url(../images/home/14.png) no-repeat center / 100% 100%;
+  background: url(../assets/home/images/home/14.png) no-repeat center / 100% 100%;
   padding-bottom: 76px;
 }
 
@@ -1029,8 +1029,14 @@ img.img__book {
     border-radius: 15.3px;
     font-size: 21.9px;
   }
-  .solution-content-item-li__text::before {
+ .solution-content-item-li__text::before {
     border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
     border-radius: 15.3px;
   }
   .right-solution-content__item {
@@ -1376,8 +1382,14 @@ img.img__book {
     border-radius: 15.3px;
     font-size: 21.9px;
   }
-  .solution-content-item-li__text::before {
+   .solution-content-item-li__text::before {
     border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
     border-radius: 15.3px;
   }
   .right-solution-content__item {
@@ -1723,8 +1735,14 @@ img.img__book {
     border-radius: 15.3px;
     font-size: 21.9px;
   }
-  .solution-content-item-li__text::before {
+   .solution-content-item-li__text::before {
     border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
     border-radius: 15.3px;
   }
   .right-solution-content__item {
@@ -2070,8 +2088,14 @@ img.img__book {
     border-radius: 15.3px;
     font-size: 21.9px;
   }
-  .solution-content-item-li__text::before {
+   .solution-content-item-li__text::before {
     border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
     border-radius: 15.3px;
   }
   .right-solution-content__item {
@@ -2435,8 +2459,14 @@ img.img__book {
     border-radius: 15.3px;
     font-size: 21.9px;
   }
-  .solution-content-item-li__text::before {
+   .solution-content-item-li__text::before {
     border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
     border-radius: 15.3px;
   }
   .right-solution-content__item {
@@ -2782,8 +2812,14 @@ img.img__book {
     border-radius: 15.3px;
     font-size: 21.9px;
   }
-  .solution-content-item-li__text::before {
+   .solution-content-item-li__text::before {
     border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
     border-radius: 15.3px;
   }
   .right-solution-content__item {
@@ -3128,9 +3164,15 @@ img.img__book {
     border-radius: 13.1px;
     font-size: 18.8px;
   }
-  .solution-content-item-li__text::before {
-    border: 1.3px solid transparent;
-    border-radius: 13.1px;
+   .solution-content-item-li__text::before {
+    border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
+    border-radius: 15.3px;
   }
   .right-solution-content__item {
     top: 78.1px;
@@ -3462,9 +3504,15 @@ img.img__book {
     border-radius: 10.9px;
     font-size: 15.6px;
   }
-  .solution-content-item-li__text::before {
+   .solution-content-item-li__text::before {
     border: 1.1px solid transparent;
-    border-radius: 10.9px;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
+    border-radius: 15.3px;
   }
   .right-solution-content__item {
     top: 65.1px;
@@ -3788,9 +3836,15 @@ img.img__book {
     border-radius: 9.8px;
     font-size: 14px;
   }
-  .solution-content-item-li__text::before {
-    border: 1px solid transparent;
-    border-radius: 9.8px;
+   .solution-content-item-li__text::before {
+    border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
+    border-radius: 15.3px;
   }
   .right-solution-content__item {
     top: 58.6px;
@@ -4446,8 +4500,14 @@ img.img__book {
     font-size: 12px;
   }
   .solution-content-item-li__text::before {
-    border: 0.8px solid transparent;
-    border-radius: 8.4px;
+    border: 1.5px solid transparent;
+    border-image: repeating-linear-gradient(
+        90deg,
+        #fff 0 7.3px,
+        transparent 7.3px 14.6px
+      )
+      1;
+    border-radius: 15.3px;
   }
   .right-solution-content__item {
     top: 50px;
