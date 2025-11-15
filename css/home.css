@@ -230,7 +230,7 @@ html {
   max-width: 1920px;
   margin: 0 auto;
   height: 150px;
-  background-image: url(../images/home/11.png);
+  background-image: url(../assets/home/images/home/11.png);
   background-size: 1920px auto;
   display: flex;
   align-items: center;
@@ -263,6 +263,7 @@ html {
   color: #fff;
   font-size: 67px;
   font-weight: 700;
+  align-items: center;
 }
 
 .stat__label {
@@ -861,7 +862,7 @@ img.img__book {
   display: none;
 }
 
-@media (max-width: 1800px) {
+/* @media (min-width: 1700px) and (max-width: 1800px) {
   .header__top {
     max-width: 1400px;
     height: 32.8px;
@@ -1101,6 +1102,8 @@ img.img__book {
   .decor-border {
     top: 2.9px;
     left: 2.9px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 11.7px;
@@ -1214,7 +1217,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1700px) {
+@media (min-width: 1600px) and (max-width: 1700px) {
   .header__top {
     max-width: 1400px;
     height: 32.8px;
@@ -1454,6 +1457,8 @@ img.img__book {
   .decor-border {
     top: 2.9px;
     left: 2.9px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 11.7px;
@@ -1567,7 +1572,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1500px) and (max-width: 1600px) {
   .header__top {
     max-width: 1400px;
     height: 32.8px;
@@ -1807,6 +1812,8 @@ img.img__book {
   .decor-border {
     top: 2.9px;
     left: 2.9px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 11.7px;
@@ -1918,9 +1925,9 @@ img.img__book {
     font-size: 14.6px;
     line-height: 23.4px;
   }
-}
+} */
 
-@media (max-width: 1500px) {
+@media (min-width: 1400px) and (max-width: 1500px) {
   .header__top {
     max-width: 1400px;
     height: 32.8px;
@@ -2161,6 +2168,8 @@ img.img__book {
   .decor-border {
     top: 2.9px;
     left: 2.9px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 11.7px;
@@ -2274,7 +2283,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1537px) {
+@media (min-width: 1400px) and (max-width: 1537px) {
   .section__blog {
     /* padding: 0 20px 41px 20px; */
     box-sizing: border-box;
@@ -2291,7 +2300,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1300px) and (max-width: 1400px) {
   .header__top {
     max-width: 1400px;
     height: 32.8px;
@@ -2531,6 +2540,8 @@ img.img__book {
   .decor-border {
     top: 2.9px;
     left: 2.9px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 11.7px;
@@ -2644,7 +2655,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1200px) and (max-width: 1300px) {
   .header__top {
     max-width: 1400px;
     height: 32.8px;
@@ -2884,6 +2895,8 @@ img.img__book {
   .decor-border {
     top: 2.9px;
     left: 2.9px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 11.7px;
@@ -2997,7 +3010,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .header__top {
     max-width: 1200px;
     height: 28.1px;
@@ -3236,6 +3249,8 @@ img.img__book {
   .decor-border {
     top: 2.5px;
     left: 2.5px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 10px;
@@ -3349,7 +3364,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 900px) and (max-width: 1000px) {
   .header__top {
     max-width: 1000px;
     height: 23.5px;
@@ -3575,6 +3590,8 @@ img.img__book {
   .decor-border {
     top: 1.7px;
     left: 1.7px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 8.3px;
@@ -3681,7 +3698,8 @@ img.img__book {
     line-height: 16.7px;
   }
 }
-@media (max-width: 900px) {
+
+@media (min-width: 800px) and (max-width: 900px) {
   .header__top {
     max-width: 900px;
     height: 21.1px;
@@ -3907,6 +3925,8 @@ img.img__book {
   .decor-border {
     top: 1.5px;
     left: 1.5px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 7.5px;
@@ -4013,7 +4033,8 @@ img.img__book {
     line-height: 15px;
   }
 }
-@media (max-width: 800px) {
+
+@media (min-width: 769px) and (max-width: 800px) {
   .header__top {
     max-width: 800px;
     height: 18.8px;
@@ -4229,6 +4250,8 @@ img.img__book {
   .decor-border {
     top: 1.3px;
     left: 1.3px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 6.7px;
@@ -4332,7 +4355,8 @@ img.img__book {
     line-height: 13.4px;
   }
 }
-@media (max-width: 768px) {
+
+@media (min-width: 650px) and (max-width: 768px) {
   .header__top {
     max-width: 768px;
     height: 18px;
@@ -4571,6 +4595,8 @@ img.img__book {
   .decor-border {
     top: 1.6px;
     left: 1.6px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 6.4px;
@@ -4684,7 +4710,7 @@ img.img__book {
   }
 }
 
-@media (max-width: 650px) {
+@media (min-width: 577px) and (max-width: 650px) {
   .header__top {
     max-width: 650px;
     height: 15.3px;
@@ -4900,6 +4926,8 @@ img.img__book {
   .decor-border {
     top: 1.1px;
     left: 1.1px;
+            width: 67%;
+
   }
   .blog-card-item__desc {
     gap: 5.4px;
@@ -5003,6 +5031,7 @@ img.img__book {
     line-height: 10.8px;
   }
 }
+
 /*mobile*/
 .header__top .menu-icon-mobile {
   display: none;
@@ -5254,7 +5283,7 @@ img.img__book {
   /*    .stats*/
   .stats {
     height: fit-content;
-    background-image: url(../images/home/backgroung-mobile-stat.png);
+    background-image: url(../assets/home/images/home/backgroung-mobile-stat.png);
     width: 100%;
     max-width: 576px;
     object-fit: cover;
@@ -5269,14 +5298,16 @@ img.img__book {
   /*    product*/
   .product-content__title {
     padding: 0;
-    max-width: 390px;
+    max-width: 400px;
     font-size: 30px;
     line-height: 1.3;
     margin: 0 auto;
   }
   .product__content {
-    background-image: none;
-  }
+background: url(../assets/home/images/home/14.png) no-repeat center / 100% 100%;
+        background-size: 270%;
+
+}
   .product-content__cards {
     gap: 77px;
     left: 0;
@@ -5310,6 +5341,19 @@ img.img__book {
     flex-shrink: 0;
     top: 63px;
   }
+  .solution-content-item-li__icon {
+    width: 150px;
+height: 150px;
+flex-shrink: 0;
+        padding: 12px;
+        border: 0.8px solid #95cc44;
+  }
+  .solution-content-item-li__icon img {
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 10;
+}
   .solution-content-item__content {
     left: 76px;
     transform: none;
@@ -5321,6 +5365,9 @@ img.img__book {
     flex-shrink: 0;
     justify-content: start;
     padding-left: 0 !important;
+    margin-left: -70px;
+    border-radius: 8.4px;
+    font-size: 30px;
   }
 
   .solution-content-item-li__text h2 {
